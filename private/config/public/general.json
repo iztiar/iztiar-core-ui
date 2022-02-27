@@ -1,0 +1,10 @@
+{
+	"Iztiar": {
+		"general": {
+			"comments": [
+				"These are Iztiar configuration variables common to all environments.",
+				"Note that the configuration items from this file are available to the clients."
+			]
+		}
+	}
+}

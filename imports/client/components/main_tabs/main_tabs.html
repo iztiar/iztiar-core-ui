@@ -1,0 +1,21 @@
+<template name="main_tabs">
+    <div class="x-components c-main-tabs">
+
+            <ul class="nav nav-tabs" role="tablist" style="display: none">
+                {{#each it in tabItems }}
+                    <li class="nav-item" role="tab">
+                       <a class="nav-link" href="{{it.route}}" role="tab" data-toggle="tab" itabbed-id="{{it.id}}">{{it.label}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+
+            <div class="tab-content">
+                {{#each it in tabItems }}
+                    <div class="tab-pane fade show" role="tabpanel" id="{{it.id}}">
+                        {{> Template.dynamic template=it.component }}    
+                    </div>
+                {{/each}}
+            </div>
+
+    </div>
+</template>

@@ -1,0 +1,22 @@
+{
+    "Iztiar": {
+        "environments": {
+            "comments": [
+                "An environment is identified by its key name (e.g. 'dev.1').",
+                "Because some JS packages may rely on 'development' or 'production' only, the 'type' key qualifies our environment.",
+                "",
+                "The application reads its current running environment from the IZTIAR_ENV variable",
+                "(see @iztiar/iztiar-core/docs/Environment.md for a rationale).",
+                "",
+                "Other used variables:",
+                "   - ROOT_URL: the public root URL of our application."
+            ],
+            "dev.1": {
+                "type": "development"
+            },
+            "prod.1": {
+                "type": "production"
+            }
+        }
+    }
+}
